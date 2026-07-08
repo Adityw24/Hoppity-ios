@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+	<string>Hoppity</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(MARKETING_VERSION)</string>
+	<key>CFBundleVersion</key>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>UILaunchScreen</key>
+	<dict/>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+	</array>
+	<key>UIApplicationSupportsIndirectInputEvents</key>
+	<true/>
+
+	<!-- Google Sign-In iOS client ID -->
+	<key>GIDClientID</key>
+	<string>763877266995-6ke194as54ppgiphr2itrvri6rod4261.apps.googleusercontent.com</string>
+
+	<!-- OAuth callback URL schemes -->
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>supabase-auth</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>io.supabase.hoppity</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>google-signin</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.763877266995-6ke194as54ppgiphr2itrvri6rod4261</string>
+			</array>
+		</dict>
+	</array>
+
+	<!-- App Transport Security -->
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<false/>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>supabase.co</key>
+			<dict>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<false/>
+			</dict>
+			<key>hoppity.in</key>
+			<dict>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSExceptionAllowsInsecureHTTPLoads</key>
+				<false/>
+			</dict>
+		</dict>
+	</dict>
+
+	<!-- Privacy usage strings -->
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Hoppity needs access to your photo library to update your profile picture.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Hoppity needs camera access to take a profile photo.</string>
+
+	<!-- Custom fonts -->
+	<key>UIAppFonts</key>
+	<array>
+		<string>Figtree-Black.ttf</string>
+		<string>Figtree-BlackItalic.ttf</string>
+		<string>Figtree-Bold.ttf</string>
+		<string>Figtree-BoldItalic.ttf</string>
+		<string>Figtree-ExtraBold.ttf</string>
+		<string>Figtree-ExtraBoldItalic.ttf</string>
+		<string>Figtree-Italic-VariableFont_wght.ttf</string>
+		<string>Figtree-Italic.ttf</string>
+		<string>Figtree-Light.ttf</string>
+		<string>Figtree-LightItalic.ttf</string>
+		<string>Figtree-Medium.ttf</string>
+		<string>Figtree-MediumItalic.ttf</string>
+		<string>Figtree-Regular.ttf</string>
+		<string>Figtree-SemiBold.ttf</string>
+		<string>Figtree-SemiBoldItalic.ttf</string>
+		<string>Figtree-VariableFont_wght.ttf</string>	</array>
+</dict>
+</plist>
